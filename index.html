@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <link type="images/png" rel="icon" href="/img/3d-fluency-youtube-logo.png">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img src="img/logo.PNG" class="logo" alt="">
+        <div class="search-box">
+            <input type="text" class="search-bar" placeholder="search">
+            <button class="search-btn"><img src="img/search.PNG" alt=""></button>
+        </div>
+        <div class="user-options">
+            <img src="img/video.PNG" class="icon" alt="">
+            <img src="img/grid.PNG" class="icon" alt="">
+            <img src="img/bell.PNG" class="icon" alt="">
+            <div class="user-dp">
+               <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin"> <img src="img/propic.png" alt=""></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <div class="side-bar">
+        <a href="https://www.youtube.com/" class="links active"><img src="img/home.PNG" alt="">home</a>
+        <a href="https://www.youtube.com/feed/explore" class="links"><img src="img/explore.PNG" alt="">explore</a>
+        <a href="https://www.youtube.com/feed/subscriptions" class="links"><img src="img/subscription.PNG" alt="">subscription</a>
+        <hr class="seperator">
+        <a href="https://www.youtube.com/feed/library" class="links"><img src="img/library.PNG" alt="">library</a>
+        <a href="https://www.youtube.com/feed/history" class="links"><img src="img/history.PNG" alt="">history</a>
+        <a href="#" class="links"><img src="img/your-video.PNG" alt="">your video</a>
+        <a href="https://www.youtube.com/playlist?list=WL" class="links"><img src="img/watch-later.PNG" alt="">watch leater</a>
+        <a href="https://www.youtube.com/playlist?list=LL" class="links"><img src="img/liked video.PNG" alt="">liked video</a>
+        <a href="#" class="links"><img src="img/show more.PNG" alt="">show more</a>
+    </div>
+
+    <!-- filters -->
+    <div class="filters">
+        </a><button class="filter-options active" onclick="window.location.href='https://www.youtube.com/';">all</button>
+        <button class="filter-options" onclick="window.location.href='https://www.youtube.com/results?search_query=css';">CSS</button>
+        <button class="filter-options" onclick="window.location.href='https://www.youtube.com/results?search_query=web+development';">web development</button>
+        <button class="filter-options" onclick="window.location.href='https://www.youtube.com/results?search_query=python';">python</button>
+        <button class="filter-options" onclick="window.location.href='https://www.youtube.com/results?search_query=entertainment';">entertainment</button>
+        <button class="filter-options" onclick="window.location.href='https://www.youtube.com/results?search_query=marvel';">marvel</button>
+        <button class="filter-options" onclick="window.location.href='https://www.youtube.com/results?search_query=javascript';">javascript</button>
+        <button class="filter-options" onclick="window.location.href='https://www.youtube.com/results?search_query=artificial+intelligence';">artificial intelligence</button>
+        <button class="filter-options" onclick="window.location.href='https://www.youtube.com/results?search_query=machine+learning';">machine learning</button>
+        <button class="filter-options" onclick="window.location.href='https://www.youtube.com/results?search_query=trending';">trending</button>
+    </div>
+
+    
+    <div class="video-container">
+         <div class="video">
+            <img src="img/gray man.png" class="thumbnail" alt="">
+            <div class="content">
+                <img src="img/gray man.png" class="channel-icon" alt="">
+                <div class="info">
+                    <a href="https://youtu.be/D346arxIYBk"><b class="title" style="color:black">Dhanush Fights Ryan Gosling and Ana De Armas | The Gray Man | Netflix India</b></a>
+                    <p class="channel-name">Netflix India</p>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="video" style="float:right; margin-left:30px">
+           <img src="img/avtar.png" class="thumbnail" alt="">
+           <div class="content">
+               <img src="img/avtar.png" class="channel-icon" alt="">
+               <div class="info">
+                   <a href="https://youtu.be/NZrX_ES93JA"><b class="title" style="color:black">AVATAR 2: THE WAY OF WATER Trailer (2022)</b></a>
+                   <p class="channel-name">ONE Media</p>
+               </div>
+           </div>
+       </div> 
+
+       <div class="video" style="float:right; margin-left:30px">
+        <img src="img/Aqua.jpg" class="thumbnail" alt="">
+        <div class="content">
+            <img src="img/Aqua.jpg" class="channel-icon" alt="">
+            <div class="info">
+                <a href="https://youtu.be/-YZzvvO5SfY"><b class="title" style="color:black">AQUAMAN 2 AND THE LOST KINGDOM (2022) | Teaser Trailer Concept | Jason Momoa</b></a>
+                <p class="channel-name">KH Studio</p>
+            </div>
+        </div>
+    </div> 
+    <div class="video" style="float:right; margin-left:30px">
+        <img src="img/BP.jpg" class="thumbnail" alt="">
+        <div class="content">
+            <img src="img/BP.jpg" class="channel-icon" alt="">
+            <div class="info">
+                <a href="https://youtu.be/GSNqYsd24QA"><b class="title" style="color:black">BLACK PANTHER 2: Wakanda Forever - FIRST TRAILER | Marvel Studios (2022)</b></a>
+                <p class="channel-name">Screen Culture</p>
+            </div>
+        </div>
+    </div> 
+   </div>
+
+   <div class="video-container" style="margin-top:30px">
+    <div class="video">
+        <img src="img/Ben10.jpg" class="thumbnail" alt="">
+        <div class="content">
+            <img src="img/Ben10.jpg" class="channel-icon" alt="">
+            <div class="info">
+                <a href="https://youtu.be/JsnzZF0_13I"><b class="title" style="color:black">Ben 10: The Movie
+                        "Teaser Trailer" (2022) 'Tom Holland' Live Action | Concept</b></a>
+                <p class="channel-name">Fandom Topics</p>
+           </div>
+       </div>
+   </div> 
+
+   <div class="video" style="float:right; margin-left:30px">
+    <img src="img/BlackAdam.jpg" class="thumbnail" alt="">
+    <div class="content">
+        <img src="img/BlackAdam.jpg" class="channel-icon" alt="">
+        <div class="info">
+            <a href="https://youtu.be/X0tOpBuYasI"><b class="title" style="color:black">Black Adam – Official
+                    Trailer 1</b></a>
+            <p class="channel-name">Warner Bros. Pictures</p>
+          </div>
+      </div>
+  </div> 
+
+  <div class="video" style="float:right; margin-left:30px">
+    <img src="img/thor.jpg" class="thumbnail" alt="">
+    <div class="content">
+        <img src="img/thor.jpg" class="channel-icon" alt="">
+        <div class="info">
+            <a href="https://youtu.be/Go8nTmfrQd8"><b class="title" style="color:black">Marvel Studios' Thor:
+                    Love and Thunder | Official Trailer</b></a>
+            <p class="channel-name">Marvel Entertainment</p>
+       </div>
+   </div>
+</div> 
+<div class="video" style="float:right; margin-left:30px">
+    <img src="img/agent.jpg" class="thumbnail" alt="">
+    <div class="content">
+        <img src="img/agent.jpg" class="channel-icon" alt="">
+        <div class="info">
+            <a href="https://youtu.be/DsdT3D_zKF0"><b class="title" style="color:black">AGENT Teaser | Akhil
+                    Akkineni, Mammootty | Surender Reddy | Anil Sunkara</b></a>
+            <p class="channel-name">AK Entertainments</p>
+       </div>
+   </div>
+</div> 
+</div>
+
+<div class="video-container" style="margin-top:30px">
+    <div class="video">
+        <img src="img/dp.jpg" class="thumbnail" alt="">
+        <div class="content">
+            <img src="img/dp.jpg" class="channel-icon" alt="">
+            <div class="info">
+                <a href="https://youtu.be/CWDok7d4gY8"><b class="title" style="color:black">Deadpool: The Smartest Man
+                        Alive</b></a>
+                <p class="channel-name">Mightyraccoon</p>
+           </div>
+       </div>
+   </div> 
+
+   <div class="video" style="float:right; margin-left:30px">
+    <img src="img/s.jpg" class="thumbnail" alt="">
+    <div class="content">
+        <img src="img/s.jpg" class="channel-icon" alt="">
+        <div class="info">
+            <a href="https://youtu.be/P--300KZTf4"><b class="title" style="color:black">SHIVAJI Maharaj - Teaser |
+                    Yash | SS Rajamouli | Fox Trailer studio |Concept Cuts</b></a>
+            <p class="channel-name">FOX TRAILER STUDIO</p>
+          </div>
+      </div>
+  </div> 
+
+  <div class="video" style="float:right; margin-left:30px">
+    <img src="img/h.jpg" class="thumbnail" alt="">
+    <div class="content">
+        <img src="img/h.jpg" class="channel-icon" alt="">
+        <div class="info">
+            <a href="https://youtu.be/WVZTsTXO3Nk"><b class="title" style="color:black">Marvel’s Midnight Suns |
+                    “Darkness Falls” Trailer</b></a>
+            <p class="channel-name">Marvel Entertainment</p>
+       </div>
+   </div>
+</div> 
+<div class="video" style="float:right; margin-left:30px">
+    <img src="img/agent.jpg" class="thumbnail" alt="">
+    <div class="content">
+        <img src="img/agent.jpg" class="channel-icon" alt="">
+        <div class="info">
+            <a href="https://youtu.be/DsdT3D_zKF0"><b class="title" style="color:black">AGENT Teaser | Akhil
+                    Akkineni, Mammootty | Surender Reddy | Anil Sunkara</b></a>
+            <p class="channel-name">AK Entertainments</p>
+       </div>
+   </div>
+</div> 
+</div>
+<div class="video-container" style="margin-top:30px">
+    <div class="video">
+       <img src="img/gray man.png" class="thumbnail" alt="">
+       <div class="content">
+           <img src="img/gray man.png" class="channel-icon" alt="">
+           <div class="info">
+               <a href="https://youtu.be/D346arxIYBk"><b class="title" style="color:black">Dhanush Fights Ryan Gosling and Ana De Armas | The Gray Man | Netflix India</b></a>
+               <p class="channel-name">Netflix India</p>
+           </div>
+       </div>
+   </div> 
+
+   <div class="video" style="float:right; margin-left:30px">
+      <img src="img/avtar.png" class="thumbnail" alt="">
+      <div class="content">
+          <img src="img/avtar.png" class="channel-icon" alt="">
+          <div class="info">
+              <a href="https://youtu.be/NZrX_ES93JA"><b class="title" style="color:black">AVATAR 2: THE WAY OF WATER Trailer (2022)</b></a>
+              <p class="channel-name">ONE Media</p>
+          </div>
+      </div>
+  </div> 
+
+  <div class="video" style="float:right; margin-left:30px">
+   <img src="img/Aqua.jpg" class="thumbnail" alt="">
+   <div class="content">
+       <img src="img/Aqua.jpg" class="channel-icon" alt="">
+       <div class="info">
+           <a href="https://youtu.be/-YZzvvO5SfY"><b class="title" style="color:black">AQUAMAN 2 AND THE LOST KINGDOM (2022) | Teaser Trailer Concept | Jason Momoa</b></a>
+           <p class="channel-name">KH Studio</p>
+       </div>
+   </div>
+</div> 
+<div class="video" style="float:right; margin-left:30px">
+   <img src="img/BP.jpg" class="thumbnail" alt="">
+   <div class="content">
+       <img src="img/BP.jpg" class="channel-icon" alt="">
+       <div class="info">
+           <a href="https://youtu.be/GSNqYsd24QA"><b class="title" style="color:black">BLACK PANTHER 2: Wakanda Forever - FIRST TRAILER | Marvel Studios (2022)</b></a>
+           <p class="channel-name">Screen Culture</p>
+       </div>
+   </div>
+</div> 
+</div>
+
+
+
+   
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
