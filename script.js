@@ -3,13 +3,6 @@ const videoCardContainer = document.querySelector('.video-container');
 // <!-- https://developers.google.com/youtube/code_samples?hl=en#youtube-live-streaming-api -->
 
 
-// async function getytclone(){
-//     var video=document.getElementById('video').name
-//     console.log(video)
-//     let data=await fetch(`https://developers.google.com/youtube/code_samples?hl=en#youtube-live-streaming-api`)
-//     let res=await data.json()
-//     console.log(res)
-// }
 
 let api_key = "your api key";
 let video_http = "https://www.googleapis.com/youtube/v3/videos?";
