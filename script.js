@@ -1,36 +1,80 @@
 const videoCardContainer = document.querySelector('.video-container');
 
+// <!-- https://developers.google.com/youtube/code_samples?hl=en#youtube-live-streaming-api -->
+
+
+// async function getytclone(){
+//     var video=document.getElementById('video').name
+//     console.log(video)
+//     let data=await fetch(`https://developers.google.com/youtube/code_samples?hl=en#youtube-live-streaming-api`)
+//     let res=await data.json()
+//     console.log(res)
+// }
+
 let api_key = "your api key";
 let video_http = "https://www.googleapis.com/youtube/v3/videos?";
 let channel_http = "https://www.googleapis.com/youtube/v3/channels?";
 
-fetch(video_http + new URLSearchParams({
-    key: api_key,
-    part: 'snippet',
-    chart: 'mostPopular',
-    maxResults: 50,
-    regionCode: 'IN'
-}))
-.then(res => res.json())
-.then(data => {
-    data.items.forEach(item => {
+async function yt1(){
+    let item = await fetch(video_http + new URLSearchParams({
+        key: api_key,
+        part: 'snippet',
+        chart: 'mostPopular',
+        maxResults: 50,
+        regionCode: 'IN'
+    }))
+    let res = await res.json();
+    let data= await data.items.forEach(item => {
         getChannelIcon(item);
-    })
-})
-.catch(err => console.log(err));
+    }
+    )
 
-const getChannelIcon = (video_data) => {
-    fetch(channel_http + new URLSearchParams({
+}
+yt1();
+
+
+
+const getChannelIcon = async function yt2 (video_data) 
+{
+   let items =await fetch(channel_http + new URLSearchParams({
         key: api_key,
         part: 'snippet',
         id: video_data.snippet.channelId
     }))
-    .then(res => res.json())
-    .then(data => {
+    let res = await res.json();
+    let data=await 
         video_data.channelThumbnail = data.items[0].snippet.thumbnails.default.url;
         makeVideoCard(video_data);
-    })
 }
+yt2 ();
+
+// fetch(video_http + new URLSearchParams({
+//     key: api_key,
+//     part: 'snippet',
+//     chart: 'mostPopular',
+//     maxResults: 50,
+//     regionCode: 'IN'
+// }))
+// .then(res => res.json())
+// .then(data => {
+//     data.items.forEach(item => {
+//         getChannelIcon(item);
+//     })
+// })
+// .catch(err => console.log(err));
+
+// const getChannelIcon = (video_data) => {
+//     fetch(channel_http + new URLSearchParams({
+//         key: api_key,
+//         part: 'snippet',
+//         id: video_data.snippet.channelId
+//     }))
+//     .then(res => res.json())
+//     .then(data => {
+//         video_data.channelThumbnail = data.items[0].snippet.thumbnails.default.url;
+//         makeVideoCard(video_data);
+//     })
+// }
 
 const makeVideoCard = (data) => {
     videoCardContainer.innerHTML += `

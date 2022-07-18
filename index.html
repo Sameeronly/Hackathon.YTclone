@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube Clone</title>
-    <link type="images/png" rel="icon" href="/img/3d-fluency-youtube-logo.png">
+    <link type="images/png" rel="icon" href="/img/3d-fluency-youtube-logo.png.jpg">
 
     <link rel="stylesheet" href="/css/style.css">
+
+    <!-- https://developers.google.com/youtube/code_samples?hl=en#youtube-live-streaming-api -->
 
 </head>
 <body>
@@ -31,8 +33,6 @@
             </div>
         </div>
     </nav>
-
-    <!-- sidebar -->
     <div class="side-bar">
         <a href="https://www.youtube.com/" class="links active"><img src="img/home.PNG" alt="">home</a>
         <a href="https://www.youtube.com/feed/explore" class="links"><img src="img/explore.PNG" alt="">explore</a>
@@ -45,8 +45,6 @@
         <a href="https://www.youtube.com/playlist?list=LL" class="links"><img src="img/liked video.PNG" alt="">liked video</a>
         <a href="#" class="links"><img src="img/show more.PNG" alt="">show more</a>
     </div>
-
-    <!-- filters -->
     <div class="filters">
         </a><button class="filter-options active" onclick="window.location.href='https://www.youtube.com/';">all</button>
         <button class="filter-options" onclick="window.location.href='https://www.youtube.com/results?search_query=css';">CSS</button>
@@ -59,8 +57,6 @@
         <button class="filter-options" onclick="window.location.href='https://www.youtube.com/results?search_query=machine+learning';">machine learning</button>
         <button class="filter-options" onclick="window.location.href='https://www.youtube.com/results?search_query=trending';">trending</button>
     </div>
-
-    
     <div class="video-container">
          <div class="video">
             <img src="img/gray man.png" class="thumbnail" alt="">
@@ -247,11 +243,6 @@
    </div>
 </div> 
 </div>
-
-
-
-   
-
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="app.js"></script>
     
